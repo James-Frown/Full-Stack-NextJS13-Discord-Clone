@@ -6,6 +6,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { useForm } from "react-hook-form";
 
+import { Input } from "@/components/ui/input";
+
+import { Button } from "@/components/ui/button";
+
+import { useEffect, useState } from "react";
+
+import { FileUpload } from "@/components/file-upload";
+
 import {
   Dialog,
   DialogContent,
@@ -23,12 +31,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-
-import { Input } from "@/components/ui/input";
-
-import { Button } from "@/components/ui/button";
-
-import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -85,7 +87,13 @@ export const InitialModel = () => {
                   name="imageUrl"
                   render={({ field }) => (
                     <FormItem>
-                      <FormControl>File Upload</FormControl>
+                      <FormControl>
+                        <FileUpload
+                          endpoint="serverImage"
+                          value={field.value}
+                          onChange={field.onChange}
+                        />
+                      </FormControl>
                     </FormItem>
                   )}
                 />
