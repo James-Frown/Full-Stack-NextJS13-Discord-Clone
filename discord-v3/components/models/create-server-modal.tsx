@@ -12,7 +12,7 @@ import { FileUpload } from "@/components/file-upload";
 
 import axios from "axios";
 
-import { useModal } from "@/hooks/use-model-store";
+import { useModal } from "@/hooks/use-modal-store";
 
 import { useRouter } from "next/navigation";
 
@@ -65,6 +65,7 @@ export const CreateServerModal = () => {
       await axios.post("/api/servers", values);
       form.reset();
       router.refresh();
+      onClose();
     } catch (error) {
       console.log(error);
     }
