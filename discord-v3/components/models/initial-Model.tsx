@@ -84,11 +84,11 @@ export const InitialModel = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl font-bold text-center">
-            Customize Your Server
+            🌟 Create Your First Server 🚀
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-600">
-            Give your server a reason for its existance. You can always change
-            it later!
+            Bestow a Server Life Mission And Feel Free to Switch Things Up
+            Later! 🎉
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>

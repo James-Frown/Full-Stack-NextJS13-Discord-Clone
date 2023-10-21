@@ -104,10 +104,16 @@ export const MembersModal = () => {
       <DialogContent className="bg-white text-black overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl font-bold text-center">
-            Manage Members
+            🔧 Manage Members 🔍
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            {server?.members?.length} Members
+            {server?.members?.length}
+            {server?.members?.length < 2 && (
+              " Member"
+            )}
+            {server?.members?.length > 1 && (
+              " Members"
+            )}
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="mt-8 max-h-[420px] pr-6">

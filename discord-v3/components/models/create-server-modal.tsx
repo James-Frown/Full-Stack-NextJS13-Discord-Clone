@@ -81,7 +81,7 @@ export const CreateServerModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl font-bold text-center">
-            Customize Your New Server
+            🌟 Create A New Server 🚀
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-600">
             Bestow a Server Life Mission And Feel Free to Switch Things Up

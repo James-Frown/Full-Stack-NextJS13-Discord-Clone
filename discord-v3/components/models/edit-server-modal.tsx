@@ -92,7 +92,7 @@ export const EditServerModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl font-bold text-center">
-            Customize Your Server Settings
+            🔧 Edit Your Server 💻
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-600">
             Tailor Your Server's Identity, Modify Server Name and Image to Suit
