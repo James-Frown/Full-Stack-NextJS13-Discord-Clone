@@ -22,8 +22,6 @@ export const InviteModal = () => {
 
   const origin = useOrigin();
 
-  console.log(origin);
-
   const isModalOpen = isOpen && type === "invite";
 
   const { server } = data;
