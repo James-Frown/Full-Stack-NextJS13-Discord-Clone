@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ModalProvider } from "@/components/providers/modal-provider";
 
 import { cn } from "@/lib/utils";
+import { NextResponse } from "next/server";
 
 const font = Open_Sans({ subsets: ["latin"] });
 
@@ -21,6 +22,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  if (!ClerkProvider) {
+    return new NextResponse("Clerk Error", { status: 500 });
+  }
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
